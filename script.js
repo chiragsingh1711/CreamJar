@@ -19,10 +19,11 @@ const sizes = {
 const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
   antialias: true,
-  alpha: true,
+  alpha: false,
 });
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setClearColor(0xb2b2b2, 1);
 
 window.addEventListener("resize", () => {
   // Update sizes
