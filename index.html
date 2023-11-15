@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron + Three JS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <canvas class="webgl"></canvas>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./Three-build/three.module.js",
+          "three/addons/": "./Three-build/examples/jsm/",
+          "dat.gui": "./Dat-build/dat.gui.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
